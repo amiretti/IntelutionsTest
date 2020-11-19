@@ -60,6 +60,7 @@ namespace IntelutionsTest.Api.Core
                 EmpleadoApellidos = permiso.EmpleadoApellidos,
                 EmpleadoNombre = permiso.EmpleadoNombre,
                 FechaPermiso = permiso.FechaPermiso,
+                TipoPermisoId = permiso.TipoPermisoId,
                 TipoPermiso = tipoPermisoSvc.GetById(permiso.TipoPermisoId).Descripcion
             };
         }

@@ -39,6 +39,7 @@ import license from "@/logic/permisos";
       return {
         formTitle: "Nuevo Permiso",
         form: {
+          id: 0,
           empleadoNombre: '',
           empleadoApellidos: '',
           tipoPermisoId: 0,
@@ -84,17 +85,26 @@ import license from "@/logic/permisos";
   },
   mounted(){
     this.getLicensesTypesList();
-
+    if(this.$route.query.id){
+      this.formTitle = "Editar permiso";
+      license.GetLicenseById(this.$route.query.id).then((resp) => {
+       this.form.id =  resp.data.id;
+       this.form.empleadoNombre = resp.data.empleadoNombre;
+       this.form.empleadoApellidos = resp.data.empleadoApellidos;
+       this.form.tipoPermisoId = resp.data.tipoPermisoId;
+       this.form.fechaPermiso = resp.data.fechaPermiso;
+      });
+    }
   },
    created() {
-    bus.$on('edit-license', (license) => {
-      debugger;
-      this.formTitle = "Editar permiso";
-      this.form.empleadoNombre = license.empleadoNombre;
-      this.form.empleadoApellidos = license.empleadoApellidos;
-      //this.form.tipoPermisoId = license.tipoPermisoId;
-      this.form.fechaPermiso = license.fechaPermiso;
-    });
+    // bus.$on('edit-license', function (license){
+    //   console.log(license);
+    //   this.formTitle = "Editar permiso";
+    //   this.form.empleadoNombre = license.empleadoNombre;
+    //   this.form.empleadoApellidos = license.empleadoApellidos;
+    //   //this.form.tipoPermisoId = license.tipoPermisoId;
+    //   this.form.fechaPermiso = license.fechaPermiso;
+    // }.bind(this));
   }
   }
 </script>

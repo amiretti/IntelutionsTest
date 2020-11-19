@@ -72,8 +72,8 @@ export default {
         }
       },
       editLicense(item) {
-        //this.$router.push('/permiso');
-          bus.$emit('edit-license', item);
+        this.$router.push('/permiso?id=' + item.id);
+        //bus.$emit('edit-license', item);
       },
       deleteLicenseModal(item) {
         this.idSeleccionado = item.id;
