@@ -1,0 +1,17 @@
+D:\Repositorios\Intelutions\IntelutionsTest\IntelutionsTest.Data\bin\Debug\netcoreapp3.1\IntelutionsTest.Data.deps.json
+D:\Repositorios\Intelutions\IntelutionsTest\IntelutionsTest.Data\bin\Debug\netcoreapp3.1\IntelutionsTest.Data.dll
+D:\Repositorios\Intelutions\IntelutionsTest\IntelutionsTest.Data\bin\Debug\netcoreapp3.1\IntelutionsTest.Data.pdb
+D:\Repositorios\Intelutions\IntelutionsTest\IntelutionsTest.Data\obj\Debug\netcoreapp3.1\IntelutionsTest.Data.AssemblyInfoInputs.cache
+D:\Repositorios\Intelutions\IntelutionsTest\IntelutionsTest.Data\obj\Debug\netcoreapp3.1\IntelutionsTest.Data.AssemblyInfo.cs
+D:\Repositorios\Intelutions\IntelutionsTest\IntelutionsTest.Data\obj\Debug\netcoreapp3.1\IntelutionsTest.Data.csproj.CoreCompileInputs.cache
+D:\Repositorios\Intelutions\IntelutionsTest\IntelutionsTest.Data\obj\Debug\netcoreapp3.1\IntelutionsTest.Data.dll
+D:\Repositorios\Intelutions\IntelutionsTest\IntelutionsTest.Data\obj\Debug\netcoreapp3.1\IntelutionsTest.Data.pdb
+D:\Repositorios\Intelutions\BackEnd\IntelutionsTest.Data\bin\Debug\netcoreapp3.1\IntelutionsTest.Data.deps.json
+D:\Repositorios\Intelutions\BackEnd\IntelutionsTest.Data\bin\Debug\netcoreapp3.1\IntelutionsTest.Data.dll
+D:\Repositorios\Intelutions\BackEnd\IntelutionsTest.Data\bin\Debug\netcoreapp3.1\IntelutionsTest.Data.pdb
+D:\Repositorios\Intelutions\BackEnd\IntelutionsTest.Data\obj\Debug\netcoreapp3.1\IntelutionsTest.Data.csprojAssemblyReference.cache
+D:\Repositorios\Intelutions\BackEnd\IntelutionsTest.Data\obj\Debug\netcoreapp3.1\IntelutionsTest.Data.AssemblyInfoInputs.cache
+D:\Repositorios\Intelutions\BackEnd\IntelutionsTest.Data\obj\Debug\netcoreapp3.1\IntelutionsTest.Data.AssemblyInfo.cs
+D:\Repositorios\Intelutions\BackEnd\IntelutionsTest.Data\obj\Debug\netcoreapp3.1\IntelutionsTest.Data.csproj.CoreCompileInputs.cache
+D:\Repositorios\Intelutions\BackEnd\IntelutionsTest.Data\obj\Debug\netcoreapp3.1\IntelutionsTest.Data.dll
+D:\Repositorios\Intelutions\BackEnd\IntelutionsTest.Data\obj\Debug\netcoreapp3.1\IntelutionsTest.Data.pdb
