@@ -4,6 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import VueLuxon from "vue-luxon";
+
+Vue.use(VueLuxon);
 
 // Install BootstrapVue
 Vue.use(BootstrapVue)

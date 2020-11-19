@@ -24,6 +24,7 @@
 <script>
 import { bus } from '../main'
 import license from "@/logic/permisos";
+import { DateTime } from "luxon";
 export default {
   name: 'Permisos',
   data () {
@@ -49,7 +50,8 @@ export default {
           {
             key: 'fechaPermiso',
             label: 'Fecha del permiso',
-            sortable: false
+            sortable: false,
+            formatter: "formatDateAssigned"
           },
           {
             key: 'actions',
@@ -96,7 +98,11 @@ export default {
             this.isBusy = false;
             console.log(error);
           });
-      }
+      },
+      formatDateAssigned(value) {
+      const formattedDate = DateTime.fromISO(value).toLocaleString(DateTime.DATE_SHORT);
+      return formattedDate;
+    }
     },
     mounted(){
       this.getLicensesList();

@@ -37,7 +37,7 @@ import license from "@/logic/permisos";
   export default {
     data() {
       return {
-        formTitle: "Nuevo Permiso",
+        formTitle: "Nuevo permiso",
         form: {
           id: 0,
           empleadoNombre: '',
@@ -59,10 +59,12 @@ import license from "@/logic/permisos";
       onReset(evt) {
         evt.preventDefault()
         // Reset our form values
+        this.form.id = 0;
         this.form.empleadoNombre = '';
         this.form.empleadoApellidos = '';
         this.form.tipoPermisoId = 0;
         this.form.fechaPermiso = new Date();
+        this.formTitle = "Nuevo permiso";
         // Trick to reset/clear native browser form validation state
         this.show = false
         this.$nextTick(() => {
@@ -95,16 +97,21 @@ import license from "@/logic/permisos";
        this.form.fechaPermiso = resp.data.fechaPermiso;
       });
     }
-  },
-   created() {
-    // bus.$on('edit-license', function (license){
-    //   console.log(license);
-    //   this.formTitle = "Editar permiso";
-    //   this.form.empleadoNombre = license.empleadoNombre;
-    //   this.form.empleadoApellidos = license.empleadoApellidos;
-    //   //this.form.tipoPermisoId = license.tipoPermisoId;
-    //   this.form.fechaPermiso = license.fechaPermiso;
-    // }.bind(this));
+    else
+    {
+      this.formTitle = "Nuevo permiso";
+      // Reset our form values
+      this.form.id = 0;
+      this.form.empleadoNombre = '';
+      this.form.empleadoApellidos = '';
+      this.form.tipoPermisoId = 0;
+      this.form.fechaPermiso = new Date();
+      // Trick to reset/clear native browser form validation state
+      this.show = false
+      this.$nextTick(() => {
+        this.show = true
+      })
+    }
   }
   }
 </script>
